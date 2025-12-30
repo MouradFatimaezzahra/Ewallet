@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewallet User|Profil</title>
+    <link rel="stylesheet" href="/src//css/dashboard.css">
+</head>
+<body>
+    <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="/assets/e-Wallet6.gif" alt="Logo E-Wallet">
+      <h2>E-Wallet</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="active"><a href="#">Tableau de bord</a></li>
+      <li><a href="#">Envoyer</a></li>
+      <li><a href="index.html">Se déconnecter</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+    <header class="topbar">
+      <h1 id="welcome_message"> </h1>
+      <span id="date" class="topbar-date"> </span>
+    </header>
+    
+    <div id="profil" style="width:200px;height:200px;background-color: lightgray;
+    border-radius: 50%;margin-left: 33%;"> </div>
+    <button id="profilphoto" style="border: none;border-radius: 12px; cursor: pointer; 
+    background: linear-gradient(135deg, #ac39cf, #ec74d6);padding:20px;margin: 3px 37%;">Ajouter Photo</button>
+    <h2>infos user:</h2><br>
+    
+    <div style="margin-left: 8%;">
+       Name:<h4 id="name"></h4><br>
+       Email:<h4 id="email"></h4><br>
+       Solde:<h4 id="montant"></h4><br>
+    </div>
+    </div>
+
+    </main>
+    <script type="module" src="../Controller/profil.js"></script>
+</body>
+</html>

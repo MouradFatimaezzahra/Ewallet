@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payer</title>
+</head>
+<body>
+  <p>Solde actuel : <span id="balance"></span></p>
+
+    <label>
+      Description :
+      <input type="text" id="description" required>
+    </label>
+    <br><br>
+
+    <label>
+      Montant (MAD) :
+      <input type="number" id="montant" required>
+    </label>
+    <br><br>
+
+    <button type="submit" id="payForm">Payer</button>
+  
+
+  <br>
+  <button onclick="window.location.href='dashboard.html'">
+    Retour
+  </button>
+
+  <script type="module" src="../Controller/payer.js"></script>
+</body>
+</html>
