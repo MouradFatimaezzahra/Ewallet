@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payer E-Wallet</title>
+    <title>Recharger</title>
     <link rel="stylesheet" href="/src//css/dashboard.css">
 </head>
 <body>
@@ -27,37 +27,39 @@
 
     <!-- Cartes du dashboard -->
     <section class="dashboard-cards">
-    <div class="card balance-card">
-    <p>Solde actuel : <span id="balance"></span></p>
-
-  <!-- Actions -->
+    <div class="card balance-card" >
+       <!-- Actions -->
   <div class="card-actions">
     <label>
-      Description :
-      <input type="text" id="description"  placeholder="Description">
+      Password :
+      <input type="password" id="password" placeholder="Password" required>
     </label>
-    <br><br>
+    
 
     <label>
       Montant (MAD) :
       <input type="number" id="montant" placeholder="Amount" required>
     </label>
-   
-    <br><br>
+    
+    <label>
+      Nº Carte :
+      <input type="text" id="numbercard" placeholder="Nº Carte" required>
+    </label>
 
-    <button id="payForm" style="width: auto; margin:auto 40%;">
-      Payer
-    </button>
+    <button type="submit" id="recharger" style="width: auto; margin:auto 40%;">Recharger</button>
+  
 
-    <button  style="width: auto; margin:auto 40%;" onclick="window.location.href='dashboard.html'">
-      Annuler
-    </button>
-    </div>
+ 
+  <button style="width: auto; margin:auto 40%;" onclick="window.location.href='dashboard.html'">
+    Retour
+  </button>
+  </div>
   </div>
 
     </section>
   </main>
 
-  <script type="module" src="../Controller/payer.js"></script>
+
+  <script type="module" src="../Controller/recharger.js"></script>
 </body>
 </html>

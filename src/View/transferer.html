@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transferer E-Wallet</title>
+  <link rel="stylesheet" href="/src//css/dashboard.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="/assets/e-Wallet6.gif" alt="Logo E-Wallet">
+      <h2>E-Wallet</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="active"><a href="#">Tableau de bord</a></li>
+      <li><a href="#">Transactions</a></li>
+      <li><a href="#">Envoyer</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="index.html">Se déconnecter</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+
+    <!-- Cartes du dashboard -->
+    <section class="dashboard-cards">
+      <div class="card balance-card">
+        <h3>Solde total</h3>
+        <h1 id="balance"> </h1>
+        <!-- Actions -->
+  <div class="card-actions">
+    <div>
+        NumCompte:<input type="text" id="NumCompte" placeholder="NumCompte">
+        Amount :<input type="number" id="amount" placeholder="Amount">
+    </div>
+    <button  id="transferer" style="width: auto; margin:auto 40%;">
+      <img src="/assets/depot.png" alt="Transférer">
+      Transférer
+    </button>
+
+    <button style="width: auto; margin:auto 40%;" onclick="window.location.href='dashboard.html'">
+      Annuler
+    </button>
+
+  </div>
+    </div>
+
+    </section>
+  </main>
+  <script type="module" src="/src/Controller/transferer.js"></script>
+</body>
+</html>

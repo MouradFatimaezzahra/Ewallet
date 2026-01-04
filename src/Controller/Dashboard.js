@@ -78,3 +78,11 @@ const btnPayer = document.getElementById("payer");
 btnPayer.addEventListener("click",()=>{
   window.location.href="../View/payer.html";
 });
+
+btnRecharger.addEventListener("click",()=>{
+  window.location.href="../View/recharger.html";
+});
+
+btnTransferer.addEventListener("click",()=>{
+  window.location.href="../View/transferer.html";
+});
